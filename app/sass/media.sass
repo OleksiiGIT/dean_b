@@ -1,0 +1,357 @@
+@media (max-width: 1199px)
+
+	@keyframes movingImg
+	  0%
+	    top: -1000px
+	  80%
+	    top: 24px
+	  100%
+	    top: -10px
+
+	#fp-nav
+		display: none
+
+	header
+		padding: 15px
+
+	.scrollDowmLine
+		bottom: 15px
+
+	.bottomNavigation
+		bottom: 15px
+		padding: 0 15px
+
+	.mainScreenWrapper
+
+		.mainScreenInfo
+			height: auto
+			width: auto
+			padding-right: 50px
+
+			h1
+				font-size: 42px
+
+			h3
+				font-size: 28px
+				margin-top: 10px
+				margin-bottom: 20px
+
+	.secondScreenWrapper
+
+		.secondScreenImg
+			padding-top: 60px
+
+			img
+				height: 400px
+
+				&.movingImg
+					left: 28px
+					top: -10px
+
+		.secondScreenInfo
+
+			h2
+				font-size: 42px
+
+			.flexibleContent
+				width: auto
+
+				.flexibleRows
+
+					&:nth-child(2)
+						padding-left: 20px
+
+	.thirdScreenWrapper
+
+		.thirdScreenInfo
+			align-items: center
+
+			.thirdScreenWhereToBuy
+				padding-top: 50px
+
+				h2
+					font-size: 42px
+
+			.thirdScreenImg
+				padding: 0 20px
+
+				img
+					height: 500px
+					padding-top: 0
+
+			.thirdScreenBuyBlock
+				padding-top: 50px
+
+				h5
+					margin-top: 0
+
+				.priceAndBuyBlock
+
+					p
+						font-size: 42px
+						margin-right: 10px
+
+@media (max-width: 767px)
+	
+	@keyframes movingImg
+	  0%
+	    top: -1000px
+	  80%
+	    top: 52px
+	  100%
+	    top: 25px
+
+	a
+
+		&.buy
+			font-size: 18px
+			padding: 5px 30px
+
+	header
+
+		.logo
+
+			a
+				font-size: 20px				
+
+	h1, h2
+		font-size: 30px
+
+	h3
+		font-size: 20px
+
+	.scrollDowmLine, .bottomNavigation
+		bottom: 20px
+		height: 30px
+		align-items: flex-end
+		padding: 0 20px
+
+	.circleBg
+		width: 900px
+		height: 900px
+
+	.mainScreenWrapper
+		flex-direction: column
+
+		.circleBg
+			right: -520px
+			top: -400px
+
+		.mainScreenInfo
+			height: auto
+			text-align: center
+			padding-right: 0
+
+			h1
+				font-size: 32px
+
+			h3
+				margin-top: 10px
+				font-size: 26px
+
+			a
+				margin-top: 10px
+				width: 100%
+				display: none
+
+				&:before
+					left: calc(50% - 100px)
+
+		.mainScreenImg
+			margin-top: 10px
+
+			img
+				height: 250px
+
+	.secondScreenWrapper
+
+		.circleBg
+			left: -440px
+			bottom: -465px
+
+		.secondScreenImg
+			padding-top: 80px
+			padding-right: 20px				
+
+			img
+				height: 300px
+
+				&.movingImg
+					left: 20.7px
+					top: 25px
+
+		.secondScreenInfo
+
+			.flexibleContent
+				flex-direction: column
+				width: 100%
+
+				.flexibleRows
+
+					&:nth-child(2)
+						padding-left: 0
+
+					.flexibleItem
+						padding-top: 20px
+
+						p
+							font-size: 12px
+
+	.thirdScreenWrapper
+
+		.circleBg
+			left: -440px
+			top: -466px
+
+		.thirdScreenInfo
+			
+			.row
+				align-items: center
+
+			.thirdScreenWhereToBuy
+				display: none
+
+			.thirdScreenImg
+				padding-right: 20px
+
+				img
+					height: 300px
+
+			.thirdScreenBuyBlock
+				padding-top: 15px
+
+				h5
+					margin-top: 0
+					margin-bottom: 10px
+					font-size: 20px
+
+				p
+					font-size: 14px
+
+				.priceAndBuyBlock
+					padding-top: 10px
+
+					p
+						font-size: 25px
+
+					.buy
+
+
+	.fourthScreenWrapper
+
+		h2
+			margin-bottom: 10px
+
+		.socials
+			margin-bottom: 10px
+
+			h5
+				margin-bottom: 10px
+
+		.subscribeBlock
+
+			h5
+				font-size: 18px
+				margin-bottom: 10px
+
+			.relative
+				max-width: 400px
+				margin: 0 auto
+
+				input
+					width: 100%
+					padding: 10px
+					margin-left: 0
+
+				button
+					padding: 10px
+					position: static
+					margin-left: 0
+					width: 100%
+
+			.underInput
+				font-size: 12px
+
+				a
+					font-size: 12px
+
+	.copyrightBlock
+		bottom: 120px
+		width: 500px
+		font-size: 8px
+			
+@media (max-width: 520px)
+	
+	.copyrightBlock
+		position: static
+		transform: none
+		margin-top: 20px
+		width: 100%
+
+	.thirdScreenWrapper
+
+		.thirdScreenInfo
+
+			.thirdScreenBuyBlock
+
+				h5, p, .priceAndBuyBlock
+					width: 100%
+
+				.priceAndBuyBlock
+					justify-content: space-between
+
+@media (max-width: 423px)
+	
+	.fourthScreenWrapper 
+
+		.subscribeBlock 
+
+			input
+				width: 100%
+
+			button
+				width: 100%
+				margin-left: 0
+
+@media screen and (orientation:landscape) and (max-width: 767px)
+	
+	.mainScreenWrapper
+		flex-direction: row
+		justify-content: space-around
+
+	main
+
+		.section
+			overflow: hidden
+
+  	.secondScreenWrapper 
+
+  		.secondScreenImg 
+
+  			img
+  				height: 200px
+
+  				&.movingImg
+  					left: 14px
+
+  		.secondScreenInfo
+
+  			.flexibleContent
+  				flex-direction: row
+
+  				.flexibleRows
+
+  					&:nth-child(2)
+  						padding-left: 20px
+
+  	.copyrightBlock
+  		display: none
+
+  	.fourthScreenWrapper 
+
+  		.subscribeBlock 
+
+  			.relative 
+
+  				input, button
+  					padding: 5px 10px

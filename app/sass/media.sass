@@ -1,2 +1,185 @@
+/* COLORS */
+
+$mainText: #182537
+$background: #f1f1f1
+$topsellers: #9eacbb
+$pText: #58595b
+$border: #d2dae6
+
+
+@media (max-width: 1199px)
+  .homeHeaderSlider
+    height: auto
+
 @media (max-width: 767px)
+
+  h3
+    font-size: 24px
+
+  .menus
+    width: 100%
+    right: -100%
+    background: transparent
+
+    .mainMenu
+      height: 100vh
+      background: rgba(24,37,55,0.98)
+      justify-content: space-between
+
+      .mainMenuHeaderMobile
+        display: block
+
+        .mainLogo
+          position: absolute
+          top: 30px
+          left: 50%
+          -webkit-transform: translateX(-50%)
+          -moz-transform: translateX(-50%)
+          -ms-transform: translateX(-50%)
+          -o-transform: translateX(-50%)
+          transform: translateX(-50%)
+
+        .mobileLeft
+          padding: 30px
+          display: flex
+          width: 120px
+          justify-content: space-between
+
+          img
+            width: 18px
+
+        .closeBtn
+          display: block
+          top: 27px
+
+      .loginBtn
+        padding: 0 30px
+        margin-bottom: 30px
+
+        a
+          color: white
+          background: transparent
+          display: block
+
+      .linksList
+        padding: 30px
+
+        ul
+
+          li
+            text-align: center
+            margin-bottom: 30px
+
+            a
+              color: white
+              font-size: 24px
+
+            &:last-child
+              margin: 0
+
+      .closeBtn
+        display: none
+
   header
+
+    .languages
+      display: none
+
+    .navPanel
+      width: 100%
+      justify-content: space-between
+
+      .headerFavorite
+        display: none
+
+      .headerBasket
+
+        p
+          display: none
+
+  .homeSliderInfo
+
+    .infoWrapper
+      height: 50px
+      justify-content: center
+
+      .infoItem
+        padding-right: 5px
+
+        p, img
+          display: none
+          font-size: 14px
+
+          &:last-child
+            display: block
+
+  .topSellers
+    padding: 30px 0
+
+    h3
+      padding-bottom: 30px
+
+    .topSellersTitle
+      margin-bottom: 30px
+
+      &:before, &:after
+        width: 37%
+
+  .DbMoments
+    display: none
+
+  footer
+    padding-bottom: 0
+    background: $background
+
+    .footerFirstWrapper, .footerSecondWrapper
+      border: none
+      padding: 0
+
+      .row
+
+        .footerFirstWrapperTitle
+          padding: 20px 10px
+          border-bottom: 1px solid $border
+          position: relative
+
+          &.activeFooter
+            border: none
+
+            &:after
+              display: none
+          
+          &:before, &:after
+            content: ''
+            position: absolute
+            width: 11px
+            height: 1px
+            right: 10px
+            top: 48%
+            background: $mainText
+
+          &:after
+            transform: rotate(90deg)
+
+        .footerFirstWrapperDesc
+          display: none
+          
+          &.activeFooter
+            display: block
+            padding: 0 10px 20px 10px
+            border-bottom: 1px solid $border
+
+    .footerFirstWrapper
+      padding-top: 10px
+
+    .footerSecondWrapper
+      padding-bottom: 10px
+
+      .row
+
+        .col-md-3
+
+          &:last-child
+
+            .footerFirstWrapperTitle
+              border: none

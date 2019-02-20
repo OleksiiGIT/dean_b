@@ -339,7 +339,7 @@ header {
 /* TOP SELLERS HOME PAGE */
 .topSellers {
   padding: 60px 0; }
-  .topSellers h3 {
+  .topSellers .topSellersMainTitle {
     padding-bottom: 60px;
     text-align: center; }
   .topSellers .topSellersTitle {

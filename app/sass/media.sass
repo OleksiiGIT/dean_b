@@ -25,9 +25,24 @@ $border: #d2dae6
       height: 100vh
       background: rgba(24,37,55,0.98)
       justify-content: space-between
+      overflow-y: auto
+
+      .contactMain
+        display: none
+        padding-top: 40px
+
+        .contactMainInfo
+
+          h4
+            display: block
+            margin-bottom: 30px
+
+        .closeBtn
+          display: block
 
       .mainMenuHeaderMobile
         display: block
+        position: relative
 
         .mainLogo
           position: absolute
@@ -53,8 +68,8 @@ $border: #d2dae6
           top: 27px
 
       .loginBtn
-        padding: 0 30px
-        margin-bottom: 30px
+        padding: 0px 30px 30px 30px
+        height: auto
 
         a
           color: white
@@ -62,13 +77,13 @@ $border: #d2dae6
           display: block
 
       .linksList
-        padding: 30px
+        padding: 0
 
         ul
 
           li
             text-align: center
-            margin-bottom: 30px
+            margin-bottom: 1.5em
 
             a
               color: white
@@ -81,6 +96,9 @@ $border: #d2dae6
         display: none
 
   header
+
+    &.mobileHeaderTransparent
+      background: transparent
 
     .languages
       display: none
@@ -131,6 +149,9 @@ $border: #d2dae6
   footer
     padding-bottom: 0
     background: $background
+
+    &.whiteBg
+      background: none
 
     .footerFirstWrapper, .footerSecondWrapper
       border: none
@@ -184,6 +205,240 @@ $border: #d2dae6
             .footerFirstWrapperTitle
               border: none
 
+  .subscribePopup
+    right: 50%
+    bottom: 50%
+    transform: translate(50%, 50%)
+    width: calc( 100% - 60px )
+
+    .closeBtn
+      top: 260px
+
+    .subscribePopupWrapper
+      flex-direction: column
+
+      .subscribePopupLeft
+        max-width: 100%
+        width: 100%
+        max-height: 250px
+        overflow: hidden
+
+      .subscribePopupRight
+
+        form
+          flex-direction: column
+
+          input
+
+            &[type='submit']
+              width: 100%
+              margin-left: 0
+              margin-top: 10px
+
+        .footerText
+          text-align: center
+
+  .cancelSubscribe
+    padding-top: 80px
+    background: white
+
+    .cancelSubscribeWrapper
+      padding: 40px 0 40px 0
+      text-align: center
+      max-width: 290px
+      margin: 0 auto
+
+      h3
+        font-size: 22px
+
+      p
+        margin-top: 20px
+
+      .transparent
+        margin-top: 30px
+
+  .cancelSubscribeFooter
+
+    .mainFooterItemMan
+      display: block
+      position: relative
+
+      .mainFooterItemManImg
+        position: relative
+
+        img
+          width: 100%
+
+      .mainFooterItemManText
+        position: absolute
+        bottom: 30px
+        left: 30px
+        max-width: 250px
+
+        a
+          color: white
+          border-bottom: 1px solid white
+
+        h5
+          font-size: 16px
+          color: white
+          padding: 20px 0
+
+        p
+          color: white
+          line-height: 15px
+
+  .mainStoryHeader
+
+    .mainStoryHeaderText
+      width: 100%
+      padding: 0 30px
+
+      a
+        font-size: 14px
+
+      h1
+        font-size: 30px
+
+      p
+        font-size: 14px
+
+    .mainStoryHeaderImg
+
+      img
+        min-height: 450px
+
+  .mainStoryContent
+
+    .mainStoryContentWrapper
+
+      .mainStoryContentHeader
+        padding: 30px 0
+
+        &:before
+          top: 43px
+          width: calc( 100% - 60px )
+          left: 50%
+          transform: translateX(-50%)
+
+      .mainStoryContentInside
+
+        p, img
+          margin-bottom: 30px
+
+        p
+          padding: 0 30px
+
+  .mainStoryFooterBanner
+
+    .mainStoryFooterBannerText
+      width: 100%
+      padding: 0 30px
+
+      img
+        display: none
+
+      h3
+        font-size: 20px
+        margin-bottom: 0
+
+  .mainMomentsHeader
+    display: none
+
+  .bigMomentsBannerWrapper
+
+    .bigMomentsBanner
+      position: static
+
+      .container
+        padding: 0
+        max-width: 100%
+
+        .bigMomentsBannerImg
+
+          img
+            min-height: 600px
+
+        .bigMomentsBannerText
+          padding: 0 30px
+
+          .mainMomentsHeaderHidden
+            display: block
+            text-decoration: underline
+            padding-bottom: 20px
+
+          h1
+            font-size: 26px
+            padding: 0
+            letter-spacing: inherit
+
+          p
+            font-size: 14px
+
+  .mainMomentsContent
+    padding-top: 15px
+    padding-bottom: 30px
+
+    .instaItem
+
+      img
+        margin-bottom: 15px
+
+    .transparent
+      margin-top: 15px
+
+  .mainBlogWrapper
+    padding-top: 0
+
+    .mainBlogHeader
+      display: none
+
+    .container
+      max-width: 100%
+      padding: 0
+
+      .mainBlogItem
+
+        .mainBlogItemImg
+
+          img
+            min-height: 400px
+
+        .mainBlogItemText
+          left: 0
+          bottom: 50px
+          max-width: 100%
+          text-align: center
+          width: 100%
+
+          .hiddenMobileTitle
+            display: block
+            margin-bottom: 30px
+
+          h1
+            text-decoration: underline
+            font-size: 24px
+            max-width: 320px
+            margin: 0 auto
+
+          p, h5
+            display: none
+
+      .row
+        margin: 0
+        padding: 15px 0 0 0
+
+        .blogItem
+          max-width: 360px
+          margin: 0 auto
+          padding-bottom: 30px
+
+          .blogItemImg
+
+            img
+              max-height: 260px
+
+
 @media (max-width: 400px)
   .mainMenu
 
@@ -198,3 +453,13 @@ $border: #d2dae6
 
       a
         padding: 14px 0
+
+  .loginWindow
+    height: 100vh
+    padding: 60px 20px 30px 20px
+    justify-content: center
+
+  .subscribePopup
+
+    .closeBtn
+      top: 200px

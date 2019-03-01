@@ -1,5 +1,7 @@
 $(function() {
 
+    $(".mainMenu").css("height", window.innerHeight + "px");
+
     // MOBILE FOOTER SETTINGS
 
     $(".footerFirstWrapperTitle").click(function(e){
@@ -22,7 +24,7 @@ $(function() {
     // OPEN SIMPLE MENU
 
     function menuOpen(menu){
-        $(".overlayBackground").show();
+        $(".overlayBackgroundLight").show();
         $(".menus").css("right", "0");
         $(menu).addClass("flexible");
     }
@@ -38,6 +40,18 @@ $(function() {
     $(".headerBasket").click(function(e){
         e.preventDefault();
         menuOpen(".menuBasket");
+    });
+
+    $(".headerBasketMobileInsideMenu").click(function(e) {
+        e.preventDefault();
+        menuClose(".mainMenu");
+        menuOpen(".menuBasket");
+    });
+
+    $(".headerFavoriteMobileInsideMenu").click(function(e) {
+        e.preventDefault();
+        menuClose(".mainMenu");
+        menuOpen(".menuFavorites");
     });
 
 
@@ -66,14 +80,102 @@ $(function() {
 
     });
 
+    $(".closeBtnLogin").click(function(){
+        $(".loginWindow").removeClass("flexible");
+    });
+
+    $(".overlayBackgroundLight").click(function () {
+        menuClose(".mainMenu");
+        menuClose(".menuFavorites");
+        menuClose(".menuBasket");
+    });
+
     /* RESIZE SETTING START */
 
-    $(window).resize(function(){
-        if ($(window).width() < 767) {
-            menuClose(".mainMenu");
-            menuClose(".menuFavorites");
-            menuClose(".menuBasket");
+    // $(window).resize(function(){
+    //     if ($(window).width() < 767) {
+    //         menuClose(".mainMenu");
+    //         menuClose(".menuFavorites");
+    //         menuClose(".menuBasket");
+    //     }
+    // });
+
+    /* RESIZE SETTING END */
+
+    $(".loginPopup").click(function(e){
+        e.preventDefault();
+        menuClose(".mainMenu");
+        $(".loginWindow").addClass("flexible");
+        $(".overlayBackgroundDark").show();
+    });
+
+    function isSubscribe() {
+        if (!window.localStorage.getItem("isSubscribe")) {
+            $(".subscribePopup").show();
+            if ($(window).width() < 767) {
+                $(".overlayBackgroundDarkSubscribe").show();
+            }
         }
+    }
+
+    var timeout = window.setTimeout(isSubscribe, 1000);
+
+    $(".closeBtnSubscribe").click(function(){
+        $(".subscribePopup").hide();
+        $(".overlayBackgroundDarkSubscribe").hide();
+        window.clearTimeout(timeout);
+        window.localStorage.setItem("isSubscribe", "true");
+    });
+
+    $(".formSubscribe").submit(function(e){
+        e.preventDefault();
+        if ($(this).children("input").val() !== "") {
+            $(".subscribePopupWrapper").hide();
+            $(".subscribePopupThankYou").show();
+            window.localStorage.setItem("isSubscribe", "true");
+            $(".closeBtnSubscribe").css("top", "13px");
+        }else {
+            $(this).children("input[type='email']").css("border", "1px solid red");
+        }
+    });
+
+    $(".cancelSubId").click(function(e){
+        e.preventDefault();
+        $(".cancelSubscribeWrapper").empty();
+        $('.cancelSubscribeWrapper').append("<h3>Your newsletter subscription\n" +
+            "has been canceled.</h3>");
+    });
+
+    $("#contactOpen").click(function(e){
+        e.preventDefault();
+        if ($(window).width() > 767) {
+            $(".loginPopup").toggle();
+            $(".contactMain").toggleClass("opacityActive");
+        } else {
+            $(".mainMenuHeaderMobile").toggle();
+            $(".linksList").toggle();
+            $(".loginPopup").toggle();
+            $(".contactMain").toggleClass("opacityActive");
+            $(".contactMain").toggleClass("flexible");
+            $(".mainMenu").css("background", "white");
+        }
+    });
+
+    $(".closeContactBtn").click(function(){
+        closeAfterContact();
+    });
+
+    function closeAfterContact(){
+        $(".mainMenuHeaderMobile").show();
+        $(".linksList").show();
+        $(".loginPopup").show();
+        $(".contactMain").toggleClass("opacityActive");
+        $(".contactMain").toggleClass("flexible");
+        $(".mainMenu").css("background", "");
+    }
+
+    $(window).scroll(function(){
+       $(".mainMenu").css("height", window.innerHeight + "px");
     });
 
 });

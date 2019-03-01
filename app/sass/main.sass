@@ -7,6 +7,7 @@ $pText: #58595b
 $border: #d2dae6
 $close: #a6b3c0
 $noItems: #a7a9ac
+$checkbox: #dee5f0
 
 /*  BASE STYLES */
 
@@ -25,6 +26,10 @@ $noItems: #a7a9ac
 body
   margin: 0
   padding: 0
+  -webkit-text-size-adjust: none
+
+input
+  box-shadow: none
 
 h1, h2, h3, h4, h5, h6
   margin: 0
@@ -39,6 +44,9 @@ h3
 h5
   font-size: 12px
 
+label
+  margin: 0
+
 p, a
   font-family: 'Regular', sans-serif
   font-size: 12px
@@ -51,19 +59,36 @@ p, a
     outline: none
     text-decoration: none
 
-  &.transparent
-    font-family: 'Bold', sans-serif
-    color: $mainText
-    background: white
-    border: 1px solid $border
-    padding: 14px 29px
-    text-transform: uppercase
-    letter-spacing: 2px
+.backgroundLink
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 10
+
+.transparent
+  font-family: 'Bold', sans-serif
+  color: $mainText
+  background: white
+  border: 1px solid $border
+  padding: 14px 29px
+  text-transform: uppercase
+  letter-spacing: 2px
 
 ul
   list-style: none
   margin: 0
   padding: 0
+
+.overlayForImg
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: rgba(0,0,0,.2)
 
 .flexible
   display: flex !important
@@ -83,6 +108,9 @@ ul
   z-index: 200
   background: rgba(0,0,0,.2)
   display: none
+
+.overlayBackgroundDark
+  background: rgba(24,37,55,0.9)
 
 .closeBtn
   position: absolute
@@ -106,6 +134,74 @@ ul
   &:after
     transform: rotate(-45deg)
 
+.contactMain
+  height: 100%
+  display: flex
+  flex-direction: column
+  padding: 0 40px 40px 40px
+  justify-content: space-between
+  opacity: 0
+  transition: all .3s ease-in-out
+  transform: translateX(-20px)
+
+  .closeBtn
+    display: none
+
+  &.opacityActive
+    transform: translateX(0) !important
+    opacity: 1 !important
+    overflow-y: auto
+
+  .contactMainInfo
+
+    h4
+      display: none
+      font-size: 30px
+      font-family: 'Regular', sans-serif
+      color: $mainText
+
+    .contactMainInfoBlock
+      margin-bottom: 25px
+
+      p
+        font-size: 16px
+        color: $topsellers
+        appearance: none
+
+  .contactMainForm
+
+    form
+
+      label
+        padding: 20px 10px
+        font-family: 'Bold', sans-serif
+        font-size: 12px
+        color: $topsellers
+        border-top: 1px solid $border
+        text-transform: uppercase
+        letter-spacing: 1px
+        width: 100%
+
+        input
+          display: block
+          border: none
+          outline: none
+          padding: 0
+          appearance: none
+          color: $mainText
+          font-family: 'Regular', sans-serif
+          font-size: 16px
+
+          &::placeholder
+            color: $topsellers
+
+      .transparent
+        background-color: $mainText
+        color: white
+        width: 100%
+        border: none
+        font-size: 12px
+
 .menus
   position: fixed
   right: -310px
@@ -114,6 +210,7 @@ ul
   width: 310px
   z-index: 300
   transition: right .2s ease-in-out
+  background: white
 
   .mainMenu
     display: none
@@ -129,6 +226,7 @@ ul
 
     .loginBtn
       text-align: center
+      height: 75px
 
     .linksList
       padding: 40px
@@ -194,6 +292,9 @@ header
   z-index: 100
   align-items: center
 
+  &.anotherHeaderColor
+    background: $mainText
+
   .languages
     display: flex
     align-items: center
@@ -210,6 +311,7 @@ header
       position: absolute
       top: 55px
       display: none
+      box-shadow: 10px 5px 30px -5px rgba(0, 0, 0, 0.2)
 
       div
         background: white
@@ -281,7 +383,7 @@ header
     top: 0
     width: 100%
     height: 100%
-    background: linear-gradient(to bottom, rgba(0,0,0,.2) 30%, rgba(255,255,255,0) 70%)
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%)
 
 .homeSliderInfo
   background: $background
@@ -366,6 +468,11 @@ header
 footer
   padding-bottom: 60px
 
+  &.noBorder
+
+    .footerFirstWrapper
+      border-top: none
+
   .footerFirstWrapper, .footerSecondWrapper
     border-top: 1px solid $border
     padding: 60px 0
@@ -391,6 +498,538 @@ footer
               &:hover
                 color: inherit
 
+/* LOGIN POPUP */
 
+.loginWindow
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  background: white
+  padding: 60px 40px 40px 40px
+  z-index: 300
+  width: 100%
+  max-width: 400px
+  display: none
 
+  .closeBtn
+    right: 23px
+    top: 23px
 
+  .signInTitle
+    font-family: 'Bold', sans-serif
+    font-size: 30px
+    line-height: 1
+
+  .formSignIn
+    margin-top: 20px
+    display: flex
+    flex-direction: column
+
+    label
+
+      &[for='signInEmail'], &[for='signInPassword']
+        text-transform: uppercase
+        padding: 20px 10px
+        border-top: 1px solid $border
+        font-family: 'Bold', sans-serif
+        font-size: 12px
+        color: $topsellers
+        letter-spacing: 2px
+
+      &[for='signInRemember']
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+
+        p
+          font-family: 'Regular', sans-serif
+          font-size: 16px
+          color: $topsellers
+          padding-left: 10px
+
+    input
+      display: block
+      outline: none
+      color: $topsellers
+      appearance: none
+      padding: 0
+
+      &[type='submit']
+        background: $mainText
+        color: white
+        font-family: 'Bold', sans-serif
+        border: none
+
+      &[type='email'], &[type='password']
+        border: none
+
+        &::placeholder
+          color: $topsellers
+          font-family: 'Regular', sans-serif
+
+      &[type='checkbox']
+        appearance: none
+        background: $checkbox
+        width: 30px
+        height: 20px
+        border-radius: 10px
+        position: relative
+        transition: all .3s ease-in-out
+        border: none
+        padding: 0
+
+        &:before
+          content: ''
+          transition: all .3s ease-in-out
+          width: 16px
+          height: 16px
+          background: white
+          position: absolute
+          border-radius: 100%
+          top: 2px
+          left: 2px
+
+        &:checked
+
+          &:before
+            background: #8aa0c3
+            left: unset
+            right: 2px
+
+.subscribePopup
+  position: fixed
+  max-width: 650px
+  width: 100%
+  right: 40px
+  bottom: 40px
+  background: white
+  box-shadow: 10px 5px 30px -5px rgba(0, 0, 0, 0.2)
+  display: none
+  z-index: 300
+
+  .closeBtn
+    right: 13px
+    top: 13px
+
+  .rightTitle
+    font-family: 'Bold', sans-serif
+    font-size: 26px
+    color: $mainText
+
+  .subscribePopupThankYou
+    display: none
+    padding: 30px
+
+    div
+
+      &:last-child
+        font-size: 18px
+        color: $topsellers
+        font-family: 'Regular', sans-serif
+
+        a
+          color: $mainText
+          font-size: inherit
+          border-bottom: 1px solid $mainText
+
+  .subscribePopupWrapper
+    display: flex
+    flex-direction: row
+
+    .subscribePopupRight
+      padding: 30px
+
+      .footerText
+        font-family: 'Regular', sans-serif
+        font-size: 14px
+        color: $pText
+        margin-top: 10px
+
+        a
+          color: $mainText
+          font-size: inherit
+          border-bottom: 1px solid $mainText
+
+      p
+        font-size: 18px
+        color: $topsellers
+        margin-top: 10px
+        margin-bottom: 30px
+
+      form
+        display: flex
+        justify-content: space-between
+
+        input
+          padding: 10px
+          margin: 0
+          border: 1px solid $border
+          -webkit-box-shadow: none
+          -moz-box-shadow: none
+          box-shadow: none
+          width: 100%
+          outline: none
+          color: $topsellers
+          appearance: none
+          -webkit-border-radius: 0
+          -moz-border-radius: 0
+          border-radius: 0
+
+          &[type="submit"]
+            margin-left: 10px
+            width: 30%
+            border: none
+            background: $mainText
+            color: white
+            padding: 10px 20px
+
+          &::placeholder
+            font-size: 12px
+            text-transform: uppercase
+            letter-spacing: 2px
+            line-height: 25px
+            color: $topsellers
+
+        div
+          display: block
+
+    .subscribePopupLeft
+      max-width: 190px
+
+      img
+        height: 100%
+        object-fit: cover
+        width: 100%
+
+.cancelSubscribe
+  background: $background
+  padding-top: 140px
+
+  .cancelSubscribeWrapper
+    background: white
+    padding: 110px
+    text-align: center
+    position: relative
+
+    h3
+      letter-spacing: 1px
+
+    p
+      margin-top: 5px
+      font-size: 16px
+      color: $pText
+
+    .transparent
+      background: $mainText
+      color: white
+      border: none
+      display: block
+      max-width: 290px
+      margin:  40px auto 0 auto
+      
+    .goBackHome
+      display: block
+      margin-top: 20px
+      width: 100%
+      font-size: 14px
+      font-family: 'Regular', sans-serif
+      color: $topsellers
+
+.cancelSubscribeFooter
+
+  .mainFooterItemMan
+    display: none
+
+  .footerFirstWrapper
+    background: $background
+    border: none
+
+.mainStoryHeader
+  position: relative
+
+  .mainStoryHeaderImg
+
+    img
+      width: 100%
+      object-fit: cover
+      height: 100%
+      min-height: 690px
+
+  .mainStoryHeaderText
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    width: 641px
+
+    & > *
+      color: white
+
+    a
+      font-size: 16px
+      border-bottom: 1px solid white
+
+    h1
+      font-size: 60px
+      line-height: 1
+      padding: 20px 0
+      letter-spacing: 1px
+
+    p
+      font-size: 18px
+      line-height: 25px
+
+.mainStoryContent
+  background: $background
+
+  .mainStoryContentWrapper
+    max-width: 641px
+    margin: 0 auto
+    padding-bottom: 60px
+
+    .mainStoryContentHeader
+      padding: 40px 0
+      text-align: center
+      position: relative
+
+      img
+        background: $background
+        position: relative
+        z-index: 100
+        width: 70px
+        object-fit: contain
+        height: 18px
+
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 53px
+        width: 100%
+        height: 1px
+        background: $topsellers
+
+    .mainStoryContentInside
+
+      p, img
+        margin-bottom: 40px
+        width: 100%
+        text-align: center
+
+.mainStoryFooterBanner
+  position: relative
+  margin-top: -20px
+
+  .mainStoryFooterBannerImg
+
+    img
+      width: 100%
+      max-width: 1180px
+      display: block
+      margin: 0 auto
+      min-height: 230px
+      object-fit: cover
+
+  .mainStoryFooterBannerText
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    text-align: center
+    width: 750px
+
+    h3
+      color: white
+      letter-spacing: 1px
+      margin-bottom: 20px
+
+.mainMomentsHeader
+  padding: 100px 0 40px 0
+  position: relative
+  z-index: 100
+
+  p
+    text-align: center
+    font-size: 16px
+    color: $mainText
+
+.bigMomentsBannerWrapper
+  position: relative
+  max-width: 1140px
+  margin: 0 auto
+
+  .bigMomentsBanner
+    position: absolute
+    top: -20px
+    width: 100%
+
+    .container
+      position: relative
+
+    .bigMomentsBannerImg
+
+      img
+        width: 100%
+        min-height: 380px
+        object-fit: cover
+
+    .bigMomentsBannerText
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      text-align: center
+      width: 100%
+
+      & > *
+        color: white
+
+      .mainMomentsHeaderHidden
+        display: none
+
+      h1
+        font-size: 30px
+        padding: 0 50px
+        margin-bottom: 20px
+
+      p
+        font-size: 18px
+        max-width: 700px
+        margin: 0 auto
+
+      a
+        background: transparent
+        display: block
+        max-width: 220px
+        margin: 30px auto 0 auto
+
+.mainMomentsContent
+  background: $background
+  padding-top: 390px
+  padding-bottom: 60px
+
+  .row
+    margin-right: -15px
+    margin-left: -15px
+
+  .transparent
+    display: block
+    max-width: 220px
+    margin: 30px auto 0 auto
+    background: transparent
+
+  .instaItem
+    position: relative
+
+    img
+      width: 100%
+      margin-bottom: 30px
+
+    .instaText
+      position: absolute
+      z-index: 100
+      bottom: 60px
+      text-align: center
+      width: 100%
+
+      & > *
+        color: white
+
+      h5
+        font-size: 16px
+
+.mainBlogWrapper
+  background: $background
+  padding-top: 83px
+
+  .mainBlogHeader
+    background: white
+    height: 100px
+    display: flex
+    width: 100%
+    align-items: center
+    justify-content: center
+    margin-top: -20px
+    font-family: 'Regular', sans-serif
+    font-size: 16px
+    color: $mainText
+
+  .container
+    margin-top: -20px
+
+    .mainBlogItem
+      position: relative
+
+      .mainBlogItemImg
+        position: relative
+
+        img
+          width: 100%
+          max-height: 380px
+          height: 100%
+          object-fit: cover
+          object-position: top
+
+      .mainBlogItemText
+        position: absolute
+        bottom: 60px
+        left: 60px
+        max-width: 400px
+
+        & > *
+          color: white
+
+        .hiddenMobileTitle
+          display: none
+
+        p
+          font-size: 16px
+          text-decoration: underline
+
+        h1
+          font-size: 30px
+          letter-spacing: 1px
+          margin: 15px 0
+
+        h5
+          font-family: 'Regular', sans-serif
+          letter-spacing: 1px
+          line-height: 20px
+
+    .row
+      margin: 0 -15px
+      padding: 40px 0
+
+      .blogItem
+        position: relative
+
+        .blogItemImg
+
+          img
+            width: 100%
+            max-height: 190px
+            height: 100%
+            object-fit: cover
+
+        .blogItemHeader
+          padding: 30px 0 25px 0
+
+          h4
+            font-size: 18px
+            letter-spacing: inherit
+            text-decoration: underline
+
+          p
+            text-transform: uppercase
+            color: $topsellers
+            letter-spacing: 2px
+            margin-top: 5px
+
+        .blogItemFooter
+
+          p
+            font-size: 14px
+            line-height: 20px

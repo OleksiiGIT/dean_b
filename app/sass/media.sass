@@ -134,14 +134,18 @@ $border: #d2dae6
   .topSellers
     padding: 30px 0
 
+    .topSellersMainTitle
+      padding: 0
+
     h3
       padding-bottom: 30px
 
     .topSellersTitle
-      margin-bottom: 30px
+      margin: 30px 0
 
       &:before, &:after
         width: 37%
+        top: 38px
 
   .DbMoments
     display: none
@@ -154,10 +158,13 @@ $border: #d2dae6
       background: none
 
     .footerFirstWrapper, .footerSecondWrapper
-      border: none
-      padding: 0
+
+      .container
+        border: none
+        padding: 0
 
       .row
+        margin: 0
 
         .footerFirstWrapperTitle
           padding: 20px 10px
@@ -287,6 +294,7 @@ $border: #d2dae6
         p
           color: white
           line-height: 15px
+          font-size: 14px
 
   .mainStoryHeader
 
@@ -438,6 +446,120 @@ $border: #d2dae6
             img
               max-height: 260px
 
+  .mainSingleWrapper
+
+    .container
+
+      .singleContentWrapper
+        padding: 20px 20px 40px 20px
+
+        p
+          margin-bottom: 20px
+          font-size: 14px
+
+      .mainBlogItem
+
+        .mainBlogItemText
+          transform: none
+
+      .row
+        display: none
+
+  .supportHeaderMain
+
+    .supportHeaderTitle
+      padding: 30px 0
+
+      h1
+        font-size: 30px
+        letter-spacing: 1px
+
+  .supportContent
+
+    .supportContentWrapper
+      padding: 30px
+
+      div
+        padding-bottom: 30px
+        margin-bottom: 30px
+
+        h5
+          font-size: 22px
+
+        p
+          font-size: 14px
+
+  .product
+
+    .productImg
+
+      img
+        width: 70%
+
+    .productInfo
+      margin: 20px 0
+
+      .productHeader
+        font-size: 16px
+
+      .productFooter
+        font-size: 12px
+
+    .productLink
+
+      a
+        font-size: 10px
+        padding: 7px 20px
+
+    &.topSeller
+
+      .productLink
+
+        a
+
+          span
+            font-size: 10px
+            padding: 1px 8px
+
+@media (max-width: 1024px)
+  .supportHeaderMain
+
+    .supportMenu
+
+      .owl-item
+
+        &:last-child
+
+          .supportMenuItem
+
+            a
+
+              &:after
+                display: none
+
+        .supportMenuItem
+
+          a
+
+            &:after
+              display: block
+              position: absolute
+              right: -10px
+              top: 2px
+
+@media (min-width: 1024px)
+  .supportHeaderMain
+
+    .supportMenu
+
+        .supportMenuItem
+
+          &:last-child
+
+            a
+
+              &:after
+                display: none
 
 @media (max-width: 400px)
   .mainMenu

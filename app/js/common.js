@@ -63,7 +63,7 @@ $(function() {
         if (size < 767) {
             size = "-100%";
         }else{
-            size = "-310px";
+            size = "-400px";
         }
         $(".menus").css("right", size);
         $(".overlayBackground").hide();
@@ -92,13 +92,9 @@ $(function() {
 
     /* RESIZE SETTING START */
 
-    // $(window).resize(function(){
-    //     if ($(window).width() < 767) {
-    //         menuClose(".mainMenu");
-    //         menuClose(".menuFavorites");
-    //         menuClose(".menuBasket");
-    //     }
-    // });
+    $(window).resize(function(){
+        slidersMob();
+    });
 
     /* RESIZE SETTING END */
 
@@ -176,6 +172,93 @@ $(function() {
 
     $(window).scroll(function(){
        $(".mainMenu").css("height", window.innerHeight + "px");
+    });
+
+    // Owl sliders are here
+
+    $(".quickViewSliderId").owlCarousel({
+        items: 1,
+        thumbs: true,
+        thumbsPrerendered: true,
+        stagePadding: 0,
+        margin: 20,
+        center: true
+    });
+
+    function slidersMob() {
+        if ($(window).width() < 1024) {
+            $(".supportMenuId").owlCarousel({
+                stagePadding: 0,
+                items: 1,
+                loop: false,
+                center: false,
+                margin: 20,
+                dots: false,
+                autoWidth: true
+            });
+        } else {
+            $(".supportMenuId").trigger("destroy.owl.carousel");
+        }
+    }
+
+    slidersMob();
+
+    // ADD MATCHING PRODUCTS SLIDER
+
+    $(".addMatchId").one("click", function() {
+
+        var $this = $(this);
+
+        // Start ajax
+        // Code below add to success ajax request
+
+        $this.parents(".productInCart").children(".matchingStrapWrapper").append(
+        "<div class='matchingStrapSlider owl-carousel matchingStrapSliderId'>"+
+            "<div class='matchingItem'>"+
+                "<div class='matchingItemImg'>"+
+                    "<img src='img/prod.png' alt='dean_b'>"+
+                "</div>"+
+                "<div class='matchingItemDesc'>"+
+                    "<div class='closeBtn closeMatchingBtn'></div>"+
+                    "<h5>$49.00</h5>"+
+                    "<ul><li>Mysterieux</li><li>36mm</li><li>Rose gold</li></ul>"+
+                    "<p>Genuine leather strap</p>"+
+                "</div>"+
+            "</div>"+
+            "<div class='matchingItem'>"+
+                "<div class='matchingItemImg'>"+
+                    "<img src='img/prod.png' alt='dean_b'>"+
+                "</div>"+
+                "<div class='matchingItemDesc'>"+
+                    "<div class='closeBtn closeMatchingBtn'></div>"+
+                    "<h5>$48.00</h5>"+
+                    "<ul><li>Mysterieux</li><li>36mm</li><li>Rose gold</li></ul>"+
+                    "<p>Genuine leather strap</p>"+
+                "</div>"+
+            "</div>"+
+        "</div>"
+        );
+
+        $this.addClass("invertion");
+        $this.removeClass("addMatchId");
+
+        $this.on("click", function () {
+            var current = $this.parents(".productInCart").children(".matchingStrapWrapper").children(".matchingStrapSliderId").children(".owl-stage-outer").children(".owl-stage").children(".active").html();
+            $this.parents(".productInCart").children(".matchingStrapWrapper").append(current);
+            $this.parents(".productInCart").children(".matchingStrapWrapper").children(".matchingItem").addClass("finallyAddedCase");
+            $this.parents(".productInCart").children(".matchingStrapWrapper").children(".matchingStrapSliderId").remove();
+            $this.hide();
+            $this.removeClass("invertion");
+            $this.addClass("addMatchId");
+        });
+
+        $this.parents(".productInCart").children(".matchingStrapWrapper").children(".matchingStrapSliderId").owlCarousel({
+            items: 1,
+            loop: false,
+            dots: false,
+            nav: true
+        });
+
     });
 
 });

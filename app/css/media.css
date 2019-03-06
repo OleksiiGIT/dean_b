@@ -100,12 +100,15 @@
           display: block; }
   .topSellers {
     padding: 30px 0; }
+    .topSellers .topSellersMainTitle {
+      padding: 0; }
     .topSellers h3 {
       padding-bottom: 30px; }
     .topSellers .topSellersTitle {
-      margin-bottom: 30px; }
+      margin: 30px 0; }
       .topSellers .topSellersTitle:before, .topSellers .topSellersTitle:after {
-        width: 37%; }
+        width: 37%;
+        top: 38px; }
   .DbMoments {
     display: none; }
   footer {
@@ -113,9 +116,11 @@
     background: #f1f1f1; }
     footer.whiteBg {
       background: none; }
-    footer .footerFirstWrapper, footer .footerSecondWrapper {
+    footer .footerFirstWrapper .container, footer .footerSecondWrapper .container {
       border: none;
       padding: 0; }
+    footer .footerFirstWrapper .row, footer .footerSecondWrapper .row {
+      margin: 0; }
       footer .footerFirstWrapper .row .footerFirstWrapperTitle, footer .footerSecondWrapper .row .footerFirstWrapperTitle {
         padding: 20px 10px;
         border-bottom: 1px solid #d2dae6;
@@ -216,7 +221,8 @@
         padding: 20px 0; }
       .cancelSubscribeFooter .mainFooterItemMan .mainFooterItemManText p {
         color: white;
-        line-height: 15px; }
+        line-height: 15px;
+        font-size: 14px; }
   .mainStoryHeader .mainStoryHeaderText {
     width: 100%;
     padding: 0 30px; }
@@ -311,7 +317,59 @@
           margin: 0 auto;
           padding-bottom: 30px; }
           .mainBlogWrapper .container .row .blogItem .blogItemImg img {
-            max-height: 260px; } }
+            max-height: 260px; }
+  .mainSingleWrapper .container .singleContentWrapper {
+    padding: 20px 20px 40px 20px; }
+    .mainSingleWrapper .container .singleContentWrapper p {
+      margin-bottom: 20px;
+      font-size: 14px; }
+  .mainSingleWrapper .container .mainBlogItem .mainBlogItemText {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  .mainSingleWrapper .container .row {
+    display: none; }
+  .supportHeaderMain .supportHeaderTitle {
+    padding: 30px 0; }
+    .supportHeaderMain .supportHeaderTitle h1 {
+      font-size: 30px;
+      letter-spacing: 1px; }
+  .supportContent .supportContentWrapper {
+    padding: 30px; }
+    .supportContent .supportContentWrapper div {
+      padding-bottom: 30px;
+      margin-bottom: 30px; }
+      .supportContent .supportContentWrapper div h5 {
+        font-size: 22px; }
+      .supportContent .supportContentWrapper div p {
+        font-size: 14px; }
+  .product .productImg img {
+    width: 70%; }
+  .product .productInfo {
+    margin: 20px 0; }
+    .product .productInfo .productHeader {
+      font-size: 16px; }
+    .product .productInfo .productFooter {
+      font-size: 12px; }
+  .product .productLink a {
+    font-size: 10px;
+    padding: 7px 20px; }
+  .product.topSeller .productLink a span {
+    font-size: 10px;
+    padding: 1px 8px; } }
+
+@media (max-width: 1024px) {
+  .supportHeaderMain .supportMenu .owl-item:last-child .supportMenuItem a:after {
+    display: none; }
+  .supportHeaderMain .supportMenu .owl-item .supportMenuItem a:after {
+    display: block;
+    position: absolute;
+    right: -10px;
+    top: 2px; } }
+
+@media (min-width: 1024px) {
+  .supportHeaderMain .supportMenu .supportMenuItem:last-child a:after {
+    display: none; } }
 
 @media (max-width: 400px) {
   .mainMenu .mainMenuHeaderMobile .mainLogo img {

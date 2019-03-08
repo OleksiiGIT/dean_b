@@ -2,21 +2,140 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10255a5e-b32a-49f1-b3f3-f8920e5dd50a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/support/order_delivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Oleksii.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Oleksii.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/collections.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/libs/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLinters/jshint.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cancelSubscribe.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/cancelSubscribe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/libs.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/libs.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/libs.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/media.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/media.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/libs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/libs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/.bower.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/.bower.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/AUTHORS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/AUTHORS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.slim.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.slim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.slim.min.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/dist/jquery.slim.min.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/jsonp.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/jsonp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/load.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/load.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/parseJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/parseXML.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/parseXML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/var/location.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/var/location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/var/nonce.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/var/nonce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/var/rquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/var/rquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/ajax/xhr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/ajax/xhr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/attributes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/attributes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/attributes/attr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/attributes/attr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/attributes/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/attributes/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/attributes/prop.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/attributes/prop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/attributes/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/attributes/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/attributes/val.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/attributes/val.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/callbacks.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/callbacks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/DOMEval.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/DOMEval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/access.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/access.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/init.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/parseHTML.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/parseHTML.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/ready.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/ready.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/core/var/rsingleTag.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/core/var/rsingleTag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/addGetHookIf.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/addGetHookIf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/adjustCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/adjustCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/curCSS.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/curCSS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/defaultDisplay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/hiddenVisibleSelectors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/showHide.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/showHide.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/var/cssExpand.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/var/cssExpand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/var/getStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/var/getStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/var/isHidden.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/var/rmargin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/var/rnumnonpx.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/var/rnumnonpx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/css/var/swap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/css/var/swap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data/Data.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/data/Data.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data/accepts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data/var/acceptData.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/data/var/acceptData.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data/var/dataPriv.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/data/var/dataPriv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/data/var/dataUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/data/var/dataUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/deferred.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/deferred.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/deferred/exceptionHook.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/deferred/exceptionHook.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/deprecated.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/deprecated.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/dimensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/dimensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/effects.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/effects.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/effects/Tween.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/effects/Tween.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/effects/animatedSelector.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/effects/animatedSelector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/effects/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/event/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/event/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/event/alias.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/event/alias.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/event/focusin.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/event/focusin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/event/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/event/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/event/trigger.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/event/trigger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/exports/amd.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/exports/amd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/exports/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/exports/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/_evalUrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/_evalUrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/buildFragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/buildFragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/createSafeFragment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/getAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/getAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/setGlobalEval.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/nodeNames.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rcheckableType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rleadingWhitespace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rscriptType.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rtagName.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/var/rtagName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/wrapMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/manipulation/wrapMap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/offset.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/offset.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/outro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/queue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/queue/delay.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/queue/delay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/selector-native.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/selector-native.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/selector-sizzle.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/selector-sizzle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/selector.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/selector.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/serialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/serialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/traversing.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/traversing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/traversing/findFilter.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/traversing/findFilter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/traversing/var/dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/traversing/var/dir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/traversing/var/rneedsContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/traversing/var/siblings.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/traversing/var/siblings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/arr.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/arr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/class2type.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/class2type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/concat.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/concat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/deletedIds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/document.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/documentElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/documentElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/hasOwn.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/hasOwn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/indexOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/indexOf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/pnum.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/pnum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/push.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/push.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/rcssNum.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/rcssNum.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/rnotwhite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/slice.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/slice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/var/toString.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/var/toString.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libs/jquery/src/wrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libs/jquery/src/wrap.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/libs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/libs.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/sass/media.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/media.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,44 +149,45 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/common.js">
+        <entry file="file://$PROJECT_DIR$/app/collections.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
+            <state relative-caret-position="103">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="39" />
               <folding>
-                <marker date="1551887408057" expanded="true" signature="4605:4639" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="613" column="40" selection-start-line="613" selection-start-column="40" selection-end-line="613" selection-end-column="40" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="1581" column="15" selection-start-line="1581" selection-start-column="15" selection-end-line="1581" selection-end-column="15" />
+            <state relative-caret-position="460">
+              <caret line="1906" column="15" selection-start-line="1906" selection-start-column="15" selection-end-line="1906" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/sass/media.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/sass/media.sass">
+        <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8857">
-              <caret line="521" column="28" selection-start-line="521" selection-start-column="28" selection-end-line="521" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+              <folding>
+                <marker date="1552064007918" expanded="true" signature="5282:5316" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,12 +196,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mainMenuHeaderMobile</find>
-      <find>contactMainInfoBlock</find>
-      <find>signInRemember</find>
-      <find>checkbox</find>
-      <find>formSubscribe</find>
-      <find>linksList</find>
       <find>opacityActive</find>
       <find>mainMenu</find>
       <find>mainStoryContentHeader</find>
@@ -90,7 +204,6 @@
       <find>login</find>
       <find>mainMomentsContent</find>
       <find>939598</find>
-      <find>58595b</find>
       <find>listLanguages</find>
       <find>mainStoryFooterBannerImg</find>
       <find>mainFooterItemManText</find>
@@ -106,6 +219,13 @@
       <find>productFavoriteHeaderInfo</find>
       <find>productFavoriteAdd</find>
       <find>menuBasket</find>
+      <find>58595b</find>
+      <find>mainFooterItemMan</find>
+      <find>productLink</find>
+      <find>p</find>
+      <find>headerCollectionMenu</find>
+      <find>header</find>
+      <find>header</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,15 +241,19 @@
         <option value="$PROJECT_DIR$/app/moments.html" />
         <option value="$PROJECT_DIR$/app/blog.html" />
         <option value="$PROJECT_DIR$/app/single.html" />
-        <option value="$PROJECT_DIR$/app/sass/libs.sass" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/support/order_delivery.html" />
         <option value="$PROJECT_DIR$/app/cancelSubscribe.html" />
-        <option value="$PROJECT_DIR$/app/sass/media.sass" />
         <option value="$PROJECT_DIR$/app/js/owl.carousel.js" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/sass/libs.sass" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/libs/smoothscroll-for-websites/SmoothScroll.js" />
+        <option value="$PROJECT_DIR$/app/img/smallLogo - blue.svg" />
+        <option value="$PROJECT_DIR$/app/collections.html" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/sass/main.sass" />
+        <option value="$PROJECT_DIR$/app/sass/media.sass" />
       </list>
     </option>
   </component>
@@ -144,7 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,18 +284,38 @@
               <item name="Dean_B" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dean_B" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dean_B" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dean_B" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dean_B" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dean_B" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="support" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dean_B" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dean_B" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="smoothscroll-for-websites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dean_B" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dean_B" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,6 +326,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\SCRIPTS\Dean_B\app\libs" />
       <recent name="D:\PROJECTS\SCRIPTS\Dean_B\app\js" />
     </key>
   </component>
@@ -223,12 +367,14 @@
       <workItem from="1551461896858" duration="87000" />
       <workItem from="1551692885501" duration="19650000" />
       <workItem from="1551780947514" duration="18369000" />
-      <workItem from="1551872450531" duration="14943000" />
+      <workItem from="1551872450531" duration="15074000" />
+      <workItem from="1551963894474" duration="10125000" />
+      <workItem from="1552045097214" duration="11206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163311000" />
+    <option name="totallyTimeSpent" value="184773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
@@ -304,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/libs.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
@@ -322,29 +461,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/story.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="78" column="4" lean-forward="true" selection-start-line="78" selection-start-column="4" selection-end-line="86" selection-end-column="10" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/support/order_delivery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="106" column="78" selection-start-line="106" selection-start-column="78" selection-end-line="106" selection-end-column="78" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
@@ -371,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/media.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8857">
-          <caret line="521" column="28" selection-start-line="521" selection-start-column="28" selection-end-line="521" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/js/owl.carousel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -392,20 +506,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="184" column="20" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="20" />
-          <folding>
-            <marker date="1551887408057" expanded="true" signature="4605:4639" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="613" column="40" selection-start-line="613" selection-start-column="40" selection-end-line="613" selection-end-column="40" />
+        <state relative-caret-position="290">
+          <caret line="87" column="36" selection-start-line="87" selection-start-column="36" selection-end-line="104" selection-end-column="42" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" />
@@ -413,10 +517,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/support/order_delivery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="106" selection-start-line="106" selection-end-line="118" selection-end-column="10" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/DOWNLOADS/Telegram downloads-------------------/_normalize.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="162" column="17" lean-forward="true" selection-start-line="162" selection-start-column="17" selection-end-line="162" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/libs.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/normalize.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/normalize.css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4980">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/jquery/src/.eslintrc.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/libs/smoothscroll-for-websites/SmoothScroll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/img/smallLogo - blue.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/img/smallLogo-white.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="61" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding>
+            <marker date="1552064007918" expanded="true" signature="5282:5316" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/collections.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="1581" column="15" selection-start-line="1581" selection-start-column="15" selection-end-line="1581" selection-end-column="15" />
+        <state relative-caret-position="460">
+          <caret line="1906" column="15" selection-start-line="1906" selection-start-column="15" selection-end-line="1906" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/media.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="11" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
         </state>
       </provider>
     </entry>

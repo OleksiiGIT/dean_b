@@ -31,6 +31,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'app/libs/jquery/dist/jquery.min.js', // Берем jQuery
+		'app/libs/smoothscroll-for-websites/SmoothScroll.js', // Берем jQuery
 		// 'app/libs/bootstrap/dist/js/bootstrap.js', // Берем Bootstrap
 		// 'app/libs/fullpage.js/dist/fullpage.js' // Берем fullpage.js
 		])

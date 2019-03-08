@@ -2,23 +2,37 @@ $(function() {
 
     $(".mainMenu").css("height", window.innerHeight + "px");
 
+    $(window).scroll(function(e) {
+        if ($(window).width() < 767 && $(this).scrollTop() > 0){
+            $("header").addClass("scrollableHeader");
+        } else {
+            $("header").removeClass("scrollableHeader");
+        }
+        if ($(window).width() > 767) {
+            if ($(this).scrollTop() > 84) {
+                $(".headerCollectionMenu").addClass("fixedTopMenu");
+                $(".headerCollection").css("padding-top", "133px")
+            } else {
+                $(".headerCollectionMenu").removeClass("fixedTopMenu");
+                $(".headerCollection").css("padding-top", "78px")
+            }
+        } else {
+            if ($(this).scrollTop() > 0) {
+                $(".headerCollectionMenu").addClass("fixedTopMenu");
+                $(".headerCollection").css("padding-top", "133px")
+            } else {
+                $(".headerCollectionMenu").removeClass("fixedTopMenu");
+                $(".headerCollection").css("padding-top", "78px")
+            }
+        }
+    });
+
     // MOBILE FOOTER SETTINGS
 
     $(".footerFirstWrapperTitle").click(function(e){
         e.preventDefault();
         $(this).siblings(".footerFirstWrapperDesc").toggleClass("activeFooter");
         $(this).toggleClass("activeFooter");
-    });
-
-    // LIST WITH LANGUAGES OPEN AND CLOSE WHEN YOU CLICK ON LINK
-
-    $(".selectLangId").click(function(e){
-        e.preventDefault();
-        $(this).children(".listLanguages").toggle();
-    });
-    $(".selectLangId").children("a").click(function(e){
-        e.preventDefault();
-        $(this).children(".listLanguages").hide();
     });
 
     // OPEN SIMPLE MENU
@@ -198,6 +212,18 @@ $(function() {
             });
         } else {
             $(".supportMenuId").trigger("destroy.owl.carousel");
+        }
+        if ($(window).width() < 767){
+            $(".menuSlide").owlCarousel({
+                stagePadding: 0,
+                items: 1,
+                loop: false,
+                center: false,
+                dots: false,
+                autoWidth: true
+            });
+        } else {
+            $(".menuSlide").trigger("destroy.owl.carousel");
         }
     }
 

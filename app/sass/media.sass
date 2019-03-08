@@ -6,12 +6,32 @@ $topsellers: #9eacbb
 $pText: #58595b
 $border: #d2dae6
 
+@media (max-width: 1670px)
+  .additionalItemForFixedMenu
+
+    .navPanel
+
+      .headerBasket
+
+        p
+          display: none
+
+@media (max-width: 1460px)
+  .headerCollection
+
+    .headerCollectionMenu.fixedTopMenu
+
+      .additionalItemForFixedMenu
+        display: none
 
 @media (max-width: 1199px)
   .homeHeaderSlider
     height: auto
 
 @media (max-width: 767px)
+
+  .fixedTopMenu
+    top: 58px
 
   h3
     font-size: 24px
@@ -520,6 +540,44 @@ $border: #d2dae6
           span
             font-size: 10px
             padding: 1px 8px
+
+  .headerCollection
+    padding-top: 78px
+    overflow: hidden
+
+    .headerCollectionMenu
+
+      .headerCollectionMenuWrapper
+
+        .owl-stage-outer
+          overflow: visible
+
+        .headerCollectionMenuItem
+
+          .headerCollectionMenuItemTitle
+            width: 100%
+
+            img
+              max-width: 21px
+              max-height: 21px
+              object-fit: contain
+
+    .headerCollectionWrapper
+
+      .headerCollectionWrapperText
+        padding: 60px 0
+
+        h1
+          font-size: 30px
+          letter-spacing: 1px
+
+        p
+          font-size: 16px
+
+  .catalog
+
+    .catalogItem
+      margin-top: 30px
 
 @media (max-width: 1024px)
   .supportHeaderMain

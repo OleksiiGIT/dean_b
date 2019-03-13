@@ -1,30 +1,67 @@
 $(function() {
 
+    console.log("xui");
+
     $(".mainMenu").css("height", window.innerHeight + "px");
 
     $(window).scroll(function(e) {
-        if ($(window).width() < 767 && $(this).scrollTop() > 0){
-            $("header").addClass("scrollableHeader");
-        } else {
-            $("header").removeClass("scrollableHeader");
-        }
-        if ($(window).width() > 767) {
-            if ($(this).scrollTop() > 84) {
-                $(".headerCollectionMenu").addClass("fixedTopMenu");
-                $(".headerCollection").css("padding-top", "133px")
+        if ($("header").hasClass("headerScrollTrue")){
+            if ($(window).width() < 767 && $(this).scrollTop() > 0){
+                $(".headerScrollTrue").addClass("scrollableHeader");
             } else {
-                $(".headerCollectionMenu").removeClass("fixedTopMenu");
-                $(".headerCollection").css("padding-top", "78px")
+                $(".headerScrollTrue").removeClass("scrollableHeader");
             }
-        } else {
-            if ($(this).scrollTop() > 0) {
-                $(".headerCollectionMenu").addClass("fixedTopMenu");
-                $(".headerCollection").css("padding-top", "133px")
+            if ($(window).width() > 767) {
+                if ($(this).scrollTop() > 84) {
+                    $(".headerCollectionMenu").addClass("fixedTopMenu");
+                    $(".headerCollection").css("padding-top", "133px");
+                } else {
+                    $(".headerCollectionMenu").removeClass("fixedTopMenu");
+                    $(".headerCollection").css("padding-top", "78px");
+                }
             } else {
-                $(".headerCollectionMenu").removeClass("fixedTopMenu");
-                $(".headerCollection").css("padding-top", "78px")
+                if ($(this).scrollTop() > 0) {
+                    $(".headerCollectionMenu").addClass("fixedTopMenu");
+                    $(".headerCollection").css("padding-top", "133px");
+                } else {
+                    $(".headerCollectionMenu").removeClass("fixedTopMenu");
+                    $(".headerCollection").css("padding-top", "78px");
+                }
             }
         }
+    });
+
+    // OPEN QUICK VIEW POPUP
+
+    $(".productImg").click(function(){
+        if ($(window).width() > 1200) {
+            $(".quickViewPopup").css("display", "flex");
+            $(".overlayBackgroundDark").show();
+        }
+    });
+
+    $(".closeBtnQuickView").click(function(){
+        $(".quickViewPopup").css("display", "none");
+        $(".overlayBackgroundDark").hide();
+    });
+
+    $(".addToFavoriteNow").click(function(){
+        if ($(this).hasClass("addedFavorite")) {
+            $(this).children("svg").children("path").css("fill", "none");
+            $(this).removeClass("addedFavorite");
+        } else {
+            $(this).children("svg").children("path").css("fill", "#a6b3c0");
+            $(this).addClass("addedFavorite");
+        }
+    });
+
+    // SELECT COLOR OF STRAPS
+
+    $(".selectColorJS").click(function () {
+        var url = $(this).attr("data-url");
+        $(this).parents(".colorsInside").children("span").removeClass("activeColor");
+        $(this).addClass("activeColor");
+        $(this).parents(".strapsProduct").children(".productImg").children("img").attr("src", url);
     });
 
     // MOBILE FOOTER SETTINGS
@@ -202,12 +239,9 @@ $(function() {
     function slidersMob() {
         if ($(window).width() < 1024) {
             $(".supportMenuId").owlCarousel({
-                stagePadding: 0,
-                items: 1,
                 loop: false,
-                center: false,
-                margin: 20,
                 dots: false,
+                margin: 20,
                 autoWidth: true
             });
         } else {

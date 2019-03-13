@@ -24,9 +24,20 @@ $border: #d2dae6
       .additionalItemForFixedMenu
         display: none
 
+  .quickViewPopup
+
+    .infoPart
+
+      .closeBtn
+        top: -30px
+        right: -30px
+
 @media (max-width: 1199px)
   .homeHeaderSlider
     height: auto
+
+  .quickViewPopup
+    display: none !important
 
 @media (max-width: 767px)
 
@@ -515,6 +526,7 @@ $border: #d2dae6
 
       img
         width: 70%
+        height: 200px
 
     .productInfo
       margin: 20px 0
@@ -557,10 +569,18 @@ $border: #d2dae6
           .headerCollectionMenuItemTitle
             width: 100%
 
+            p
+              font-size: 12px
+
             img
               max-width: 21px
               max-height: 21px
               object-fit: contain
+
+          ul
+
+            li
+              color: $mainText
 
     .headerCollectionWrapper
 
@@ -598,11 +618,12 @@ $border: #d2dae6
         .supportMenuItem
 
           a
+            padding: 0
 
             &:after
               display: block
               position: absolute
-              right: -10px
+              right: -13px
               top: 2px
 
 @media (min-width: 1024px)
@@ -618,6 +639,16 @@ $border: #d2dae6
 
               &:after
                 display: none
+
+@media (max-width: 991px)
+  .catalog
+
+    &.catalogStraps
+
+      .row
+
+        .catalogItem
+          max-width: inherit
 
 @media (max-width: 400px)
   .mainMenu

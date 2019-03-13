@@ -321,6 +321,7 @@ ul
           display: block
 
       .cartTotal
+        margin-top: 20px
 
         div
           display: flex
@@ -455,6 +456,8 @@ header
 
   img
     padding-right: 10px
+    width: 28px
+    height: 18px
 
   p
     color: white
@@ -947,7 +950,8 @@ footer
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
-    text-align: center
+    text-align: justify
+    text-align-last: center
     width: 641px
 
     & > *
@@ -1002,7 +1006,8 @@ footer
       p, img
         margin-bottom: 40px
         width: 100%
-        text-align: center
+        text-align: justify
+        text-align-last: center
 
 .mainStoryFooterBanner
   position: relative
@@ -1380,14 +1385,69 @@ footer
 .product
   text-align: center
 
+  &.strapsProduct
+
+    .productLink
+
+      a
+        max-width: 100%
+
   .productImg
 
     img
       max-width: 143px
-      max-height: 234px
+      height: 234px
+      object-fit: contain
 
   .productInfo
     margin: 30px 0
+
+    .productColors
+      margin-bottom: 20px
+      position: relative
+
+      .colorsInside
+        display: flex
+        flex-direction: row
+        justify-content: center
+        max-width: 80px
+        margin: 0 auto
+        position: relative
+        z-index: 50
+        background: white
+
+        span
+          width: 10px
+          height: 10px
+          display: block
+          border-radius: 100%
+          margin: 0 5px
+          position: relative
+          z-index: 50
+
+          &.activeColor
+
+            &:before
+              content: ''
+              width: 16px
+              height: 16px
+              background: transparent
+              border: 1px solid $border
+              border-radius: 100%
+              position: absolute
+              z-index: 1
+              top: -3px
+              left: -3px
+
+      &:before
+        content: ''
+        display: block
+        width: 100%
+        height: 1px
+        background: $background
+        position: absolute
+        z-index: 1
+        top: 5px
 
     .productHeader
       font-family: 'Bold', sans-serif
@@ -1595,11 +1655,10 @@ footer
   transform: translate(-50%, -50%)
   background: $background
   padding: 40px
-  display: flex
   flex-direction: row
   width: 80%
   max-height: 580px
-  z-index: 100
+  z-index: 200
   display: none
 
   .sliderPart
@@ -1617,14 +1676,43 @@ footer
       .quickViewSliderItem
 
         img
-          object-fit: contain
+          object-fit: cover
           max-height: 500px
           height: 100%
+
+      .owl-stage-outer
+        height: 100%
+
+        .owl-stage
+          height: 100%
+
+          .owl-item
+            height: 100%
+
+            .quickViewSliderItem
+              height: 100%
+
 
   .infoPart
     width: 45%
     display: flex
     flex-direction: row
+    position: relative
+
+    .addToFavoriteNow
+      position: absolute
+      right: 30px
+      top: -6px
+      cursor: pointer
+      z-index: 10
+
+      svg
+        width: 20px
+
+    .closeBtn
+      right: -7px
+      top: -7px
+      z-index: 10
 
     .owl-thumbs
       padding-left: 20px
@@ -1632,13 +1720,18 @@ footer
       flex-direction: column
       justify-content: space-between
 
+      .owl-thumb-item
+
+        &.active
+          border: 1px solid $border
+
       div
         background: white
 
         img
           width: 100px
           height: 80px
-          object-fit: contain
+          object-fit: cover
 
     .infoPartWrapper
       padding-left: 40px
@@ -1769,6 +1862,7 @@ footer
     display: flex
     flex-direction: row
     justify-content: center
+    z-index: 100
 
     &.fixedTopMenu
 
@@ -1810,6 +1904,7 @@ footer
       justify-content: flex-start
       height: 50px
       max-width: 1175px
+      z-index: 90
 
       .headerCollectionMenuItem
         width: 235px
@@ -1825,7 +1920,6 @@ footer
 
           ul
             opacity: 1
-            z-index: 1
 
         &:last-child
           border-right: 1px solid $border
@@ -1856,7 +1950,6 @@ footer
           padding: 20px
           transition: opacity .1s ease-in-out
           opacity: 0
-          z-index: -1
           border-top: 1px solid $background
           box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.2)
 
@@ -1869,6 +1962,14 @@ footer
   padding: 0 0 120px 0
   background: white
   position: relative
+
+  &.catalogStraps
+
+    .row
+      justify-content: space-around
+
+      .catalogItem
+        max-width: 200px
 
   .catalogItem
     margin-top: 60px
@@ -1892,6 +1993,7 @@ footer
 .smallScrollLogoHeader
   position: absolute
   left: 0
+  bottom: -200px
   z-index: -1
   text-align: center
   width: 100%
@@ -1899,6 +2001,9 @@ footer
   transition: all .2s ease-in-out
   transform: translateY(80px)
   user-select: none
+
+  a
+    cursor: auto
 
 .scrollableHeader
   position: fixed
@@ -1914,4 +2019,5 @@ footer
     transform: translateY(0px)
     opacity: 1
     z-index: 1
+    bottom: unset
 

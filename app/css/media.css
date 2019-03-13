@@ -5,11 +5,16 @@
 
 @media (max-width: 1460px) {
   .headerCollection .headerCollectionMenu.fixedTopMenu .additionalItemForFixedMenu {
-    display: none; } }
+    display: none; }
+  .quickViewPopup .infoPart .closeBtn {
+    top: -30px;
+    right: -30px; } }
 
 @media (max-width: 1199px) {
   .homeHeaderSlider {
-    height: auto; } }
+    height: auto; }
+  .quickViewPopup {
+    display: none !important; } }
 
 @media (max-width: 767px) {
   .fixedTopMenu {
@@ -354,7 +359,8 @@
       .supportContent .supportContentWrapper div p {
         font-size: 14px; }
   .product .productImg img {
-    width: 70%; }
+    width: 70%;
+    height: 200px; }
   .product .productInfo {
     margin: 20px 0; }
     .product .productInfo .productHeader {
@@ -374,11 +380,15 @@
       overflow: visible; }
     .headerCollection .headerCollectionMenu .headerCollectionMenuWrapper .headerCollectionMenuItem .headerCollectionMenuItemTitle {
       width: 100%; }
+      .headerCollection .headerCollectionMenu .headerCollectionMenuWrapper .headerCollectionMenuItem .headerCollectionMenuItemTitle p {
+        font-size: 12px; }
       .headerCollection .headerCollectionMenu .headerCollectionMenuWrapper .headerCollectionMenuItem .headerCollectionMenuItemTitle img {
         max-width: 21px;
         max-height: 21px;
         -o-object-fit: contain;
            object-fit: contain; }
+    .headerCollection .headerCollectionMenu .headerCollectionMenuWrapper .headerCollectionMenuItem ul li {
+      color: #182537; }
     .headerCollection .headerCollectionWrapper .headerCollectionWrapperText {
       padding: 60px 0; }
       .headerCollection .headerCollectionWrapper .headerCollectionWrapperText h1 {
@@ -392,15 +402,21 @@
 @media (max-width: 1024px) {
   .supportHeaderMain .supportMenu .owl-item:last-child .supportMenuItem a:after {
     display: none; }
-  .supportHeaderMain .supportMenu .owl-item .supportMenuItem a:after {
-    display: block;
-    position: absolute;
-    right: -10px;
-    top: 2px; } }
+  .supportHeaderMain .supportMenu .owl-item .supportMenuItem a {
+    padding: 0; }
+    .supportHeaderMain .supportMenu .owl-item .supportMenuItem a:after {
+      display: block;
+      position: absolute;
+      right: -13px;
+      top: 2px; } }
 
 @media (min-width: 1024px) {
   .supportHeaderMain .supportMenu .supportMenuItem:last-child a:after {
     display: none; } }
+
+@media (max-width: 991px) {
+  .catalog.catalogStraps .row .catalogItem {
+    max-width: inherit; } }
 
 @media (max-width: 400px) {
   .mainMenu .mainMenuHeaderMobile .mainLogo img {

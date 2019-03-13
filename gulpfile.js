@@ -47,14 +47,14 @@ gulp.task('css-libs', ['sass'], function() {
 		.pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
 });
 
-gulp.task('css-concat', function() {
-	return gulp.src([
-		'app/css/main.css',
-		'app/css/media.css'
-		])
-		.pipe(concat('style.css'))
-		.pipe(gulp.dest('app/css'));
-});
+// gulp.task('css-concat', function() {
+// 	return gulp.src([
+// 		'app/css/main.css',
+// 		'app/css/media.css'
+// 		])
+// 		.pipe(concat('style.css'))
+// 		.pipe(gulp.dest('app/css'));
+// });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']); // Наблюдение за sass файлами в папке sass
@@ -66,11 +66,12 @@ gulp.task('clean', function() {
 	return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('build', ['clean', 'sass', 'scripts', 'css-concat'], function() {
+gulp.task('build', ['clean', 'sass', 'scripts'], function() {
 
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'app/css/style.css',
-		'app/css/libs.min.css'
+		'app/css/main.css',
+		'app/css/libs.min.css',
+		'app/css/media.css'
 		])
 	.pipe(gulp.dest('dist/css'))
 

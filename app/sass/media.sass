@@ -167,16 +167,17 @@ $border: #d2dae6
 
     .topSellersMainTitle
       padding: 0
+      margin: -10px 0 -20px 0
 
     h3
       padding-bottom: 30px
 
     .topSellersTitle
-      margin: 30px 0
+      margin: 50px 0 30px 0
 
       &:before, &:after
         width: 37%
-        top: 38px
+        top: 58px
 
   .DbMoments
     display: none
@@ -250,7 +251,10 @@ $border: #d2dae6
     width: calc( 100% - 60px )
 
     .closeBtn
-      top: 260px
+      display: none
+
+      &.closeBtnMobile
+        display: block
 
     .subscribePopupWrapper
       flex-direction: column
@@ -261,7 +265,12 @@ $border: #d2dae6
         max-height: 250px
         overflow: hidden
 
+        img
+          object-position: -50px -50px
+          transform: scale(2)
+
       .subscribePopupRight
+        position: relative
 
         form
           flex-direction: column
@@ -332,6 +341,7 @@ $border: #d2dae6
     .mainStoryHeaderText
       width: 100%
       padding: 0 30px
+      text-align: center
 
       a
         font-size: 14px
@@ -341,6 +351,8 @@ $border: #d2dae6
 
       p
         font-size: 14px
+        text-align: justify
+        text-align-last: center
 
     .mainStoryHeaderImg
 
@@ -390,13 +402,16 @@ $border: #d2dae6
       position: static
 
       .container
-        padding: 0
         max-width: 100%
 
         .bigMomentsBannerImg
 
           img
-            min-height: 600px
+            height: 600px
+            display: none
+
+          .momentsMobile
+            display: block
 
         .bigMomentsBannerText
           padding: 0 30px
@@ -417,6 +432,9 @@ $border: #d2dae6
   .mainMomentsContent
     padding-top: 15px
     padding-bottom: 30px
+
+    .container
+      padding: 0 15px
 
     .instaItem
 
@@ -541,17 +559,6 @@ $border: #d2dae6
 
       a
         font-size: 10px
-        padding: 7px 20px
-
-    &.topSeller
-
-      .productLink
-
-        a
-
-          span
-            font-size: 10px
-            padding: 1px 8px
 
   .headerCollection
     padding-top: 78px
@@ -570,7 +577,7 @@ $border: #d2dae6
             width: 100%
 
             p
-              font-size: 12px
+              font-size: 14px
 
             img
               max-width: 21px
@@ -581,6 +588,9 @@ $border: #d2dae6
 
             li
               color: $mainText
+
+          &:last-child
+            border-right: none
 
     .headerCollectionWrapper
 
@@ -595,14 +605,22 @@ $border: #d2dae6
           font-size: 16px
 
   .catalog
+    padding-bottom: 120px
 
     .catalogItem
       margin-top: 30px
+
+    .loadMoreBtn
+      display: block
 
 @media (max-width: 1024px)
   .supportHeaderMain
 
     .supportMenu
+      padding: 15px 0 15px 15px
+
+      .owl-stage
+        width: 1100px !important
 
       .owl-item
 
@@ -623,7 +641,7 @@ $border: #d2dae6
             &:after
               display: block
               position: absolute
-              right: -13px
+              right: -12px
               top: 2px
 
 @media (min-width: 1024px)
@@ -669,8 +687,3 @@ $border: #d2dae6
     height: 100vh
     padding: 60px 20px 30px 20px
     justify-content: center
-
-  .subscribePopup
-
-    .closeBtn
-      top: 200px

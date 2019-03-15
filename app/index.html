@@ -75,7 +75,7 @@
 		</div>
 	</div>
 
-	<main>
+	<main class="homePage">
 		<div class="container">
 			<div class="topSellers">
 				<div class="topSellersMainTitle">Top sellers</div>
@@ -98,8 +98,7 @@
 										<div class="productLink">
                                             <a href="#">
                                                 <p>$189.00</p>
-                                                <p class="buyNow">buy now</p>
-                                                <span>Top seller</span>
+                                                <span class="topSellersBanner"><p>Top seller</p></span>
                                             </a>
 										</div>
 									</div>
@@ -116,11 +115,10 @@
 											</div>
 										</div>
 										<div class="productLink">
-                                            <a href="#">
-                                                <p>$189.00</p>
-                                                <p class="buyNow">buy now</p>
-                                                <span>Top seller</span>
-                                            </a>
+											<a href="#">
+												<p>$189.00</p>
+												<span class="topSellersBanner"><p>Top seller</p></span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -163,11 +161,10 @@
 											</div>
 										</div>
 										<div class="productLink">
-                                            <a href="#">
-                                                <p>$189.00</p>
-                                                <p class="buyNow">buy now</p>
-                                                <span>Top seller</span>
-                                            </a>
+											<a href="#">
+												<p>$189.00</p>
+												<span class="topSellersBanner"><p>Top seller</p></span>
+											</a>
 										</div>
 									</div>
 								</div>
@@ -457,7 +454,7 @@
                 <div class="itemsFavorite itemsCart">
                     <div class="productFavorite productInCart">
                         <div class="productFavoriteHeader">
-                            <div class="closeBtn"></div>
+                            <div class="closeBtn closeItemFromCart"></div>
                             <div class="productFavoriteHeaderImg">
                                 <img src="img/prod.png" alt="dean_b">
                             </div>
@@ -480,7 +477,7 @@
                     </div>
                     <div class="productFavorite productInCart">
                         <div class="productFavoriteHeader">
-                            <div class="closeBtn"></div>
+                            <div class="closeBtn closeItemFromCart"></div>
                             <div class="productFavoriteHeaderImg">
                                 <img src="img/prod.png" alt="dean_b">
                             </div>
@@ -548,6 +545,7 @@
 				<img src="img/subscribe.jpg" alt="dean_b">
 			</div>
 			<div class="subscribePopupRight">
+				<div class="closeBtn closeBtnSubscribe closeBtnMobile"></div>
 				<div class="rightTitle">Subscribe our newsletter.</div>
 				<p>Get the latest news, invites and offers straight to your mail.</p>
 				<form class="formSubscribe">
@@ -645,20 +643,38 @@
 	</div>
 
 	<script>
-		var images = [
-			"img/main1.jpg",
-			"img/main2.jpg",
-			"img/main3.jpg"
-		];
-		var change = 0,
-				item = document.getElementsByClassName("sliderItem");
-		window.setInterval(function () {
-			change++;
-			if (change === 3) {
-				change = 0;
+		var images = [];
+
+		autoSizer();
+		imagesGenerate(images.length);
+
+		window.addEventListener("resize", function(){
+			autoSizer();
+		});
+
+		function autoSizer() {
+			if (window.innerWidth < 500) {
+				console.log("Add mobile photos");
+				images = [];
+				images.push("img/smob1.jpg","img/smob2.jpg","img/smob3.jpg","img/smob4.jpg","img/smob5.jpg");
+			} else {
+				console.log("Add desktop photos");
+				images = [];
+				images.push("img/main1.jpg","img/main2.jpg","img/main3.jpg");
 			}
-			item[0].setAttribute("src", images[change]);
-		}, 10000);
+		}
+
+		function imagesGenerate(count) {
+			var change = 0,
+				item = document.getElementsByClassName("sliderItem");
+			window.setInterval(function () {
+				change++;
+				if (change === count) {
+					change = 0;
+				}
+				item[0].setAttribute("src", images[change]);
+			}, 1000);
+		}
 	</script>
 	
 	<script src="js/libs.min.js"></script>

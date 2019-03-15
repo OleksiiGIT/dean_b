@@ -17,7 +17,7 @@ $(function() {
                     $(".headerCollection").css("padding-top", "133px");
                 } else {
                     $(".headerCollectionMenu").removeClass("fixedTopMenu");
-                    $(".headerCollection").css("padding-top", "78px");
+                    $(".headerCollection").css("padding-top", "83px");
                 }
             } else {
                 if ($(this).scrollTop() > 0) {
@@ -239,10 +239,13 @@ $(function() {
     function slidersMob() {
         if ($(window).width() < 1024) {
             $(".supportMenuId").owlCarousel({
+                autoWidth: true,
+                stagePadding: 0,
+                items: 1,
                 loop: false,
+                center: false,
                 dots: false,
-                margin: 20,
-                autoWidth: true
+                margin: 20
             });
         } else {
             $(".supportMenuId").trigger("destroy.owl.carousel");
@@ -262,6 +265,12 @@ $(function() {
     }
 
     slidersMob();
+
+    // REMOVE PRODUCT FROM CART
+
+    $(".closeItemFromCart").click(function(){
+        $(".menus").append("<div class='loading__switcher'><div class='lds-default'><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>");
+    });
 
     // ADD MATCHING PRODUCTS SLIDER
 

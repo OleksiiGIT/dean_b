@@ -656,11 +656,13 @@
 			if (window.innerWidth < 500) {
 				console.log("Add mobile photos");
 				images = [];
-				images.push("img/smob1.jpg","img/smob2.jpg","img/smob3.jpg","img/smob4.jpg","img/smob5.jpg");
+				images.push("img/smob5.jpg","img/smob2.jpg","img/smob3.jpg","img/smob4.jpg","img/smob1.jpg");
+				document.getElementsByClassName("sliderItem")[0].setAttribute("src", images[0]);
 			} else {
 				console.log("Add desktop photos");
 				images = [];
 				images.push("img/main1.jpg","img/main2.jpg","img/main3.jpg");
+				document.getElementsByClassName("sliderItem")[0].setAttribute("src", images[0]);
 			}
 		}
 
@@ -673,7 +675,7 @@
 					change = 0;
 				}
 				item[0].setAttribute("src", images[change]);
-			}, 1000);
+			}, 10000);
 		}
 	</script>
 	
